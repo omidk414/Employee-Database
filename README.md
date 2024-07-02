@@ -2,7 +2,7 @@
 
 ## Description
 
-This project involves managing employee data within a PostgreSQL database using SQL queries. It includes setting up table schemas, importing data from CSV files, and performing various data analysis queries to extract meaningful insights from the employee data.
+This project involves managing employee data within a PostgreSQL (Version 16) database using SQL queries. It includes setting up table schemas, importing data from CSV files, and performing various data analysis queries to extract meaningful insights from the employee data.
 
 ## Table of Contents
 
@@ -26,16 +26,16 @@ To set up the Employee SQL database, follow these steps:
 1. **Create Tables from CSV Files:**
    
    - Use the provided SQL schema to create tables for each CSV file.
-   - Ensure to specify data types, primary keys, foreign keys, and any other constraints as needed.
+   - Specify the data types, primary keys, foreign keys, and any other constraints as needed.
 
 2. **Import Data:**
    
-   - Import each CSV file into its corresponding SQL table using appropriate SQL commands (`LOAD DATA` or equivalent).
+   - Import each CSV file into its corresponding SQL table using PostgresSQL.
 
 ## Usage
 
 ### Data Engineering:
-#### Table Schema Creation
+#### Table Schema Creation Example 
 
 1. **Employees Table Schema:**
 
