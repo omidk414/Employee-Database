@@ -2,7 +2,7 @@
 
 ## Description
 
-This README provides instructions and SQL queries for managing employee data in a SQL database. It includes table schema creation from CSV files, data import procedures, and various data analysis queries.
+This project involves managing employee data within a PostgreSQL database using SQL queries. It includes setting up table schemas, importing data from CSV files, and performing various data analysis queries to extract meaningful insights from the employee data.
 
 ## Table of Contents
 
@@ -13,10 +13,14 @@ This README provides instructions and SQL queries for managing employee data in 
     - [Data Import](#data-import)
   - [Data Analysis](#data-analysis)
     - [SQL Queries](#sql-queries)
-    - [Example Usage](#example-usage)
+    - [Examples](#examples)
+- [Acknowledgements](#acknowledgements)
 
 ## Installation
+Step 1:
+Download and install the latest version of PostgreSQL from [PostgreSQL Official Website](https://www.postgresql.org/download/).
 
+Step 2:
 To set up the Employee SQL database, follow these steps:
 
 1. **Create Tables from CSV Files:**
@@ -46,6 +50,7 @@ To set up the Employee SQL database, follow these steps:
        hire_date DATE NOT NULL,
        FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
    );
+   
 2. **Data Import**
     - Import each CSV file into its corresponding SQL table using SQL LOAD DATA or equivalent commands based on your database system.
 
@@ -58,3 +63,15 @@ To set up the Employee SQL database, follow these steps:
    SELECT emp_no, last_name, first_name, sex, salary
    FROM employees
    JOIN salaries ON employees.emp_no = salaries.emp_no;
+
+## Data Modeling
+### Entity Relationship Diagram (ERD)
+
+- Below is the Entity Relationship Diagram for the Employee SQL database:
+
+  ![ERD](https://github.com/omidk414/sql-challenge/blob/main/EmployeeSQL/ERD_QuickDBD_diagram/QuickDBD-export.png)
+
+### Acknowledgements
+- Study Group Members:
+  - Gursimran Kaur - kaursimran081999@gmail.com - SimranBoparai\
+  - Evan Wall - ewall@escoffier.edu - Ewall24
