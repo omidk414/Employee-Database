@@ -13,7 +13,8 @@ CREATE TABLE employees (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     sex CHAR(1) NOT NULL,
-    hire_date DATE NOT NULL
+    hire_date DATE NOT NULL,
+    FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
 );
 
 SELECT *
