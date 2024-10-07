@@ -71,7 +71,3 @@ To set up the Employee SQL database, follow these steps:
 
   ![ERD](https://github.com/omidk414/sql-challenge/blob/main/EmployeeSQL/ERD_QuickDBD_diagram/QuickDBD-export.png)
 
-### Acknowledgements
-- Study Group Members:
-  - Gursimran Kaur - kaursimran081999@gmail.com - SimranBoparai\
-  - Evan Wall - ewall@escoffier.edu - Ewall24
